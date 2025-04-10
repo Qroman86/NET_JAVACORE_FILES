@@ -39,6 +39,9 @@ public class Main {
                 createIfNotExistsDir(path(resDirPath, "icons"));
             }
 
+            String savegamesDirPath = path(rootDirPath, "savegames");
+            createIfNotExistsDir(savegamesDirPath);
+
             String tempDirPath = path(rootDirPath, "temp");
             if (createIfNotExistsDir(tempDirPath)) {
                 String tempFilePath = path(tempDirPath, "temp.txt");
